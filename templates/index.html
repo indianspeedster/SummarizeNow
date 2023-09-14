@@ -14,9 +14,9 @@
         <button type="button" class="btn btn-primary btn-lg " id="predictButton">Summarize</button>
     </form>
     <div><label for="textInput" class="upload-label">News</label>
-        <p type="text" id="capitalizedText" class="textbox"></p></div>
+        <p type="text" id="originalTex" class="textbox"></p></div>
     <div><label for="textInput" class="upload-label">Summary</label>
-        <p type="text" id="capitalizedTex" class="textbox"></p></div>
+        <p type="text" id="summaryTex" class="textbox"></p></div>
     
 
     <script>
@@ -33,8 +33,8 @@
             .then(response => response.json())
             .then(data => {
                 // Display the capitalized text returned from the backend
-                document.getElementById("capitalizedText").textContent = data.capitalized_text;
-                document.getElementById("capitalizedTex").textContent = data.Original_text;
+                document.getElementById("summaryTex").textContent = data.summary;
+                document.getElementById("originalTex").textContent = data.Original_text;
             });
         });
     </script>
