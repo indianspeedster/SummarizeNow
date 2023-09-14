@@ -23,3 +23,11 @@ To use the News Summarizer, follow these steps:
 
    ```bash
    git clone https://github.com/yourusername/News-Summarizer.git
+   ```
+2. Install the requirements
+   ```bash
+   pip install -r requirements.txt 
+
+3. run app.py
+   ```bash
+   python app.py 
