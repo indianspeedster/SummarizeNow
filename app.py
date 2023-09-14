@@ -53,16 +53,16 @@ def index():
     return render_template('index.html')
 
 @app.route("/summary", methods=["POST"])
-def capitalize_text():
+def summarize():
     try:
         data = request.get_json()
         text = data["text"]
 
-        # Capitalize the text
-        capitalized_text = model_predict(text, text)
+    
+        summary = model_predict(text, text)
 
-        # Return the capitalized text as JSON response
-        response_data = {"capitalized_text": text, "Original_text": capitalized_text}
+        
+        response_data = {"summary": summary, "Original_text": text}
         return jsonify(response_data)
     except Exception as e:
         return jsonify({"error": str(e)}), 400
