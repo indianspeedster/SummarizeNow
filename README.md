@@ -1,6 +1,6 @@
-# News Summarizer
+# Summarize Now
 
-News Summarizer is a Python application that uses the T5 model to summarize news articles. It was built on the CNN/Daily Mail dataset, providing concise and informative summaries of news stories.
+Summarize Now is a Python application that uses the T5 model to summarize news articles. It was built on the CNN/Daily Mail dataset, providing concise and informative summaries of news stories.
 
 ## Features
 
